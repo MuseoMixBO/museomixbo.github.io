@@ -1,0 +1,57 @@
+<IfModule mod_rewrite.c>
+# begin temp
+
+#RewriteBase /infopatti/npc14
+#RewriteRule ^index\.php$ - [L]
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule . /infopatti/npc14/index.php [L]
+
+# end temp
+
+#Options +FollowSymlinks
+#RewriteEngine On
+#RewriteBase /infopatti/npc14
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_URI}  !^/infopatti/npc14  [NC]
+#RewriteCond %{REQUEST_URI}  ^/(.*)                 [NC]
+#RewriteRule .*   /infopatti/npc14/%1 [L]
+
+# end temp
+#RewriteEngine On
+#RewriteCond %{HTTP_HOST}/infopatti !www.telebitconsulting.it/infopatti
+#RewriteRule ^.* www.infopatti.it/$0 [R,L]
+
+#RewriteCond %{REQUEST_URI} !/infopatti/npc14/npc14.html
+#RewriteRule .* /infopatti/npc14/npc14.html [L]
+#RewriteRule ^page /infopatti/npc14/npc14.html?page=$1 [L]
+
+#RewriteCond %{REQUEST_URI} !/infopatti/npc14/npc14.html
+#RewriteRule (.*) /infopatti/npc14/?$ [NC,L]
+
+RewriteEngine On
+RewriteRule ^telebitconsulting.it/infopatti/npc14/?$ /infopatti.it/npc14/
+
+#RewriteEngine On
+#RewriteCond %{HTTP_HOST} ^(www\.)?infopatti\.it [NC]
+#RewriteRule .? http://telebitconsulting.it/infopatti/npc14/ [NC R=301,L]
+
+#RewriteBase /infopatti/npc14/
+#RewriteRule ^npc14\.html - [L]
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule . /infopatti/npc14/npc14.html [L]
+
+#RewriteEngine On
+#RewriteCond %{REQUEST_URI} ^/($|/)
+#RewriteRule ^.*$ www.infopatti.it/npc14/npc14.html [L]
+
+RewriteEngine on
+RewriteRule ^npc14$ http://www.telebitconsulting.it/ [R=301,L,QSA]
+RewriteRule ^npc14/(.*) http://www.infopatti.it/$1 [R=301,L,QSA]
+
+</IfModule>
+
+
+
