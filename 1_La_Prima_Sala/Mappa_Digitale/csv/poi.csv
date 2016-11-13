@@ -1,5 +1,5 @@
-name,contenuto_audio,lat,lon,descrizione_breve,note
-Museo della Musica,http://www.amclassical.com/mp3/amclassical_piano_sonata_k_310_mvt_1.mp3,44.49288,11.35025,,
-via Zamboni,http://www.mcello63.com/suonerie_varie/01%20-%20FOLLA%20MANIFESTAZIONE.mp3,44.49690,11.35233,,
-Mercato di Mezzo,http://www.mcello63.com/suonerie_varie/01%20-%20FOLLA%20MERCATO.mp3,44.49338,11.34481,,
-Caffè Gamberini,,44.49548,11.33788,,
+name,contenuto_audio,lat,lon
+Museo della Musica,http://www.amclassical.com/mp3/amclassical_piano_sonata_k_310_mvt_1.mp3,44.49288,11.35025
+via Zamboni,http://www.mcello63.com/suonerie_varie/01%20-%20FOLLA%20MANIFESTAZIONE.mp3,44.49690,11.35233
+Mercato di Mezzo,http://www.mcello63.com/suonerie_varie/01%20-%20FOLLA%20MERCATO.mp3,44.49338,11.34481
+Caffè Gamberini,,44.49548,11.33788
